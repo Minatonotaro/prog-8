@@ -1,0 +1,210 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+
+header {
+  background-color: rgba(34, 49, 52, 0.9);
+  height:65px;
+  width: 100%;
+  position: fixed;
+  z-index:1;
+}
+
+.header_container {
+  color: white;
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.header_container_left {
+  float: left;
+}
+
+.header_container_left_logo {
+  width:128px;
+  margin-top: 20px;
+  display: block;
+}
+
+.header_container_right {
+  float:right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header_container_right:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.header_container_right_login {
+  padding: 0 25px;
+  line-height: 65px;
+  color: white;
+}
+
+.top_wrapper {
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  background-size: cover;
+  color:white;
+  padding: 180px 0px 100px 0px;
+  text-align: center;
+}
+
+.top_container h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing:5px;
+}
+
+.top_container p {
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.top_btn {
+  color: white;
+  padding: 8px 24px;
+  display:inline-block;
+  opacity:0.8;
+  border-radius:4px;
+  text-align: center;
+}
+
+.top_btn:hover {
+  opacity: 1.0;
+}
+
+.top_signup {
+  background-color: #239b76;
+  margin: 15px 0px;
+}
+
+.top_facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.top_twitter {
+  background-color: #55acee
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.body_wrapper {
+  background-color:#f7f7f7;
+  height: 580px;
+}
+
+.body_container {
+ width:1170px;
+ margin: 0 auto;
+}
+
+.body_container h2 {
+  padding-top:80px; 
+  color:#5f5d60;
+  font-weight:normal;
+  text-align:center;
+}
+
+.item_box{
+  width:25%;
+  float:left;
+  padding-top:50px;
+}
+.item_proglang {
+  width:80%;
+  text-align:center;
+  margin:0 auto;
+  position:relative;
+}
+
+.item_title {
+  color:white;
+  position:absolute;
+  top:90px;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+.item_desc {
+  padding-top:15px;
+  font-size:13px;
+  color:#b3aeb5;
+  text-align:center;
+}
+
+.message_container {
+  width:1170px; 
+  color:#5f5d60;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.message_container h2 {
+  padding-top:80px;
+  font-weight:normal;
+}
+
+.message_btn {
+  background-color:#5dca88;
+  color:white;
+  margin-top:50px;
+  margin-bottom:80px;
+  padding:15px 40px;
+  border-radius:4px;
+  display:inline-block;
+  opacity:0.8;
+  cursor:pointer;
+  box-shadow:0px 7px #1a7940;
+}
+
+.message_btn:hover {
+  opacity: 1.0;
+}
+
+.message_btn:active{
+  box-shadow:none;
+  position:relative;
+  top:7px;
+}
+
+footer {
+  border-top:1px solid #eee;
+}
+
+.footer_container {
+  width:1170px;
+  padding:30px 0px;
+  margin:0 auto;
+}
+
+.footer_container img {
+  width:124px;
+}
+
+.footer_container p{
+  font-size:12px;
+  color:#b3aeb5;
+}
