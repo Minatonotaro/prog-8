@@ -1,210 +1,271 @@
-/* CSSのリセット（消さないでください） */
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
-}
-
-li {
-  list-style: none;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
 }
 
 a {
   text-decoration: none;
 }
 
-/* ここからCSSを書いていきましょう */
-
-header {
-  background-color: rgba(34, 49, 52, 0.9);
-  height:65px;
+.container {
   width: 100%;
-  position: fixed;
-  z-index:1;
-}
-
-.header_container {
-  color: white;
+  padding: 0 15px;
   margin: 0 auto;
-  width: 1170px;
 }
 
-.header_container_left {
-  float: left;
-}
-
-.header_container_left_logo {
-  width:128px;
-  margin-top: 20px;
-  display: block;
-}
-
-.header_container_right {
-  float:right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.header_container_right:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.header_container_right_login {
-  padding: 0 25px;
-  line-height: 65px;
-  color: white;
-}
-
-.top_wrapper {
-  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(top.png);
   background-size: cover;
-  color:white;
-  padding: 180px 0px 100px 0px;
+  color: white;
   text-align: center;
 }
 
-.top_container h1 {
+.top-wrapper h1 {
   opacity: 0.7;
   font-size: 45px;
-  letter-spacing:5px;
+  letter-spacing: 5px;
 }
 
-.top_container p {
+.top-wrapper p {
   opacity: 0.7;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
-.top_btn {
-  color: white;
-  padding: 8px 24px;
-  display:inline-block;
-  opacity:0.8;
-  border-radius:4px;
+.btn-wrapper {
   text-align: center;
 }
 
-.top_btn:hover {
-  opacity: 1.0;
+.btn-wrapper p {
+  margin-bottom: 20px;
 }
 
-.top_signup {
+.signup {
   background-color: #239b76;
-  margin: 15px 0px;
 }
 
-.top_facebook {
+.facebook {
   background-color: #3b5998;
   margin-right: 10px;
 }
 
-.top_twitter {
-  background-color: #55acee
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 .fa {
   margin-right: 5px;
 }
 
-.body_wrapper {
-  background-color:#f7f7f7;
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34,49,52,0.9);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.lesson-wrapper {
   height: 580px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
 }
 
-.body_container {
- width:1170px;
- margin: 0 auto;
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
 }
 
-.body_container h2 {
-  padding-top:80px; 
-  color:#5f5d60;
-  font-weight:normal;
-  text-align:center;
+.heading h2 {
+  font-weight: normal;
 }
 
-.item_box{
-  width:25%;
-  float:left;
-  padding-top:50px;
-}
-.item_proglang {
-  width:80%;
-  text-align:center;
-  margin:0 auto;
-  position:relative;
+.lesson {
+  float: left;
+  width: 25%;
 }
 
-.item_title {
-  color:white;
-  position:absolute;
-  top:90px;
-  left:0;
-  right:0;
-  margin:auto;
+.lesson-icon {
+  position: relative;
 }
 
-.item_desc {
-  padding-top:15px;
-  font-size:13px;
-  color:#b3aeb5;
-  text-align:center;
+.lesson-icon p {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  color: white;
 }
 
-.message_container {
-  width:1170px; 
-  color:#5f5d60;
-  text-align:center;
-  margin: 0 auto;
+.text-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b3aeb5;
 }
 
-.message_container h2 {
-  padding-top:80px;
-  font-weight:normal;
+.heading h3 {
+  font-weight: normal;
 }
 
-.message_btn {
-  background-color:#5dca88;
-  color:white;
-  margin-top:50px;
-  margin-bottom:80px;
-  padding:15px 40px;
-  border-radius:4px;
-  display:inline-block;
-  opacity:0.8;
-  cursor:pointer;
-  box-shadow:0px 7px #1a7940;
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
 }
 
-.message_btn:hover {
-  opacity: 1.0;
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
 }
 
-.message_btn:active{
-  box-shadow:none;
-  position:relative;
-  top:7px;
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
 }
 
 footer {
-  border-top:1px solid #eee;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
-.footer_container {
-  width:1170px;
-  padding:30px 0px;
-  margin:0 auto;
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
 }
 
-.footer_container img {
-  width:124px;
+.clear {
+  clear: left;
 }
 
-.footer_container p{
-  font-size:12px;
-  color:#b3aeb5;
+@media all and (max-width: 1000px) {
+  .lesson {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+
+  .lesson-wrapper {
+    height: 990px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .heading h2 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .top-wrapper .btn {
+    width: 100%;
+  }
+
+  .twitter {
+    margin-top: 10px;
+  }
+
+  .top-wrapper {
+    text-align: left;
+  }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+  }
+
+  .lesson {
+    width: 100%;
+  }
+
+  .lesson-wrapper {
+    height: 1700px;
+  }
+
+  .message-wrapper .btn {
+    width: 100%;
+  }
 }
